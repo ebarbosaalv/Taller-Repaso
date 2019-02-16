@@ -1,0 +1,209 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulario de Envio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+  <div class="container" id="container" name="container">
+    <!-- Nav -->
+    
+
+
+
+
+
+
+
+    <div id="body" style='display:block'>
+      <p class="h4">Por favor complete el siguiente formulario</p>
+      <p class="h5">Informacion personal</p>
+      <div class="form-group">
+
+
+        <br><label for="PrimerNombre">Primer Nombre : </label></br>
+         <label for="PrimerNombre"> <input type="text" class="form-control" id="PrimerNombre"  </label>
+       <br> <label for="apellido">Apellido : </label></br>
+        <label for="apellido"><input type="text" class="form-control" id="apellido" </label>
+       <br> <label for="email">Email:</label></br>
+        <label for="email"><input type="email" class="form-control" id="email" aria-describedby="Email" </label>
+       
+
+      <p class="h5">Información de tarjeta de crédito : </p>
+      <!-- Credit card type (Falta) -->
+      <div class="form-group">
+        <label for="typeCard">Tarjeta de crédito : </label>
+        <label for="typeCard">
+          <select class="form-control" id="typeCard">
+            <option id="typeCard" value="Visa">Visa</option>
+            <option id="typeCard" value="Master Card">Master Card</option>
+          </select>
+        </label>
+        <br><label for="cardHolder">Titular de la tarjeta : </label></br>
+        <label for="cardHolder"><input type="text" class="form-control" id="cardHolder"></label>
+        <br><label for="cardNumber">Número de tarjeta : </label></br>
+        <label for="cardNumber"><input type="text" class="form-control" id="cardNumber"></label>
+      </div>
+
+
+      <div class="form-group">
+        <label for="cvv2">CVV2:</label>
+        <label for="cvv2"><input type="text" class="form-control" id="cvv2"></label>
+       <br> <label for="month">Fecha que expira:</label></br>
+        <label for="month">
+          <select class="form-control" id="month">
+            <option id="month" value="1">1</option>
+            <option id="month" value="2">2</option>
+            <option id="month" value="3">3</option>
+            <option id="month" value="4">4</option>
+            <option id="month" value="5">5</option>
+            <option id="month" value="6">6</option>
+            <option id="month" value="7">7</option>
+            <option id="month" value="8">8</option>
+            <option id="month" value="9">9</option>
+            <option id="month" value="10">10</option>
+            <option id="month" value="11">11</option>
+            <option id="month" value="12">12</option>
+          </select>
+        </label>
+        <label for="month">
+          <select class="form-control" id="year">
+              <option id="year" value="2020">2019</option>
+            <option id="year" value="2020">2020</option>
+            <option id="year" value="2021">2021</option>
+            <option id="year" value="2022">2022</option>
+            <option id="year" value="2023">2023</option>
+            <option id="year" value="2024">2024</option>
+            <option id="year" value="2025">2025</option>
+            <option id="year" value="2020">2026</option>
+            <option id="year" value="2020">2027</option>
+            <option id="year" value="2020">2028</option>
+            <option id="year" value="2020">2029</option>
+            <option id="year" value="2020">2030</option>
+          </select>
+        </label>
+      </div>
+      <!-- Exp date (falta)-->
+
+      <p class="h5">Dirección de Envio : </p>
+      <div class="form-group">
+        <label for="streetAddress">Dirección : </label>
+       <br> <label for="streetAddress"><input type="text" class="form-control" id="streetAddress"></label></br>
+       <br> <label for="city">Ciudad : </label></br>
+       <br> <label for="city"><input type="text" class="form-control" id="city"></label></br>
+       <br> <label for="state">Estado : </label></br>
+      <br>  <label for="state">
+          <select class="form-control" id="state">
+            <option id="state" value="Bogota">Bogota</option>
+            <option id="state" value="cali">Cundinamarca</option>
+            <option id="state" value="cucuta">Antioquia</option>
+            <option id="state" value="bucaramanga">Meta</option>
+            <option id="state" value="cartagena">Amazonas</option>
+          </select>
+        </label>
+        <label for="zip">Zip:</label>
+        <label for="zip"><input type="text" class="form-control" id="zip"></label>
+      </div>
+    
+
+      <div class="form-group">
+        <label for="country">País : </label>
+        <label for="country">
+          <select class="form-control" id="country">
+            <option id="country" value="Colombia">Colombia</option>
+           
+          </select>
+        </label>
+       <br> <label for="phone">Teléfono : </label></br>
+        <label for="phone"><input type="text" class="form-control" id="phone"></label>
+      </div>
+
+      <!-- Security code -->
+      <div class="form-group">
+       <br> <label for="securityCode">Codigo de Seguridad : </label></br>
+       <br> <label for="zip">Q9GFHKH</label></br>
+      </div>
+
+      <div class="form-group">
+        <label for="securityCode">Enter security code:</label>
+        <input type="text" class="form-control" id="securityCode">
+      </div>
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="check">
+        <label class="form-check-label" for="exampleCheck1">Marque aquí para certificar que tiene 18 años de edad o más y que acepta la
+          Condiciones de esta compra.</label>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="Enviar()">aceptar</button>
+   <style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+
+    </div>
+
+
+    <div class="alert alert-success" role="alert" id="oculto" style='display:none'>
+      Cracion completa!!.
+    </div>
+
+  </div>
+  <script src="../control/cindex.js"></script>
+
+
+
+<div class="container">
+  <h2>Crud</h2>
+
+<a href="index.html" class="btn btn-info" role="button">Inicio</a>
+<a href="update.html" class="btn btn-info" role="button">Actualizar</a>
+<a href="delete.html" class="btn btn-info" role="button">Eliminar</a>
+     
+</div>
+
+
+
+
+</body>
+
+</html>
